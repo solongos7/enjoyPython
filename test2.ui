@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>GEN 공문정리</string>
   </property>
   <widget class="QPushButton" name="btn_1">
    <property name="geometry">
@@ -68,16 +68,6 @@
      <y>10</y>
      <width>331</width>
      <height>41</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QCalendarWidget" name="calendarWidget">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>100</y>
-     <width>272</width>
-     <height>183</height>
     </rect>
    </property>
   </widget>
