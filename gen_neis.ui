@@ -2,6 +2,14 @@
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>691</width>
+    <height>340</height>
+   </rect>
+  </property>
   <property name="windowTitle">
    <string>파일 정리</string>
   </property>
@@ -122,20 +130,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;- 제작자: &lt;span style=&quot; color:#0000ff;&quot;&gt;김영주&lt;/span&gt;(solongos@gen.go.kr)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>240</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>:: 작업 준비 ::</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;- 제작자: &lt;span style=&quot; color:#0000ff;&quot;&gt;김영주&lt;/span&gt;(solongos@daum.net)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

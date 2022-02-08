@@ -5,7 +5,7 @@ import sys
 import shutil
 
 from PyQt5 import QtCore, QtGui, uic 
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QFileDialog
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QFileDialog, QMessageBox
 
 
 Ui_Form = uic.loadUiType('./gen_neis.ui')[0]
@@ -50,7 +50,9 @@ class MyApp(QWidget, Ui_Form):
                 if file[:file.find(' (')] == dir_name:
                     shutil.move(test_dir + file, test_dir + dir_name + ']')  # 공문번호별 폴더에 파일 옮기기
 
-        self.label_4.setText(':: 작업 완료 ::')
+        QMessageBox.information(self, '알림', '파일 정리 완료!')
+        
+        # self.label_4.setText(':: 작업 완료 ::')
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
