@@ -29,29 +29,29 @@ def WORK():
     os.makedirs(test_dir + "고등학교")
     os.makedirs(test_dir + "특수학교")
 
-    original_names = os.listdir(test_dir) # list
-    for file in original_names:
-        tmp = re.search(r'\w+(유치원).+\.xls[x]',file)
+    dir_names = os.listdir(test_dir) # list
+    for file in dir_names:
+        tmp = re.search(r'.+(유치원).+\.xls[x]',file)
         if tmp:
             shutil.move(test_dir + tmp.group(0), test_dir + "유치원")
 
-        tmp = re.search(r'\w+(중학교).+\.xls[x]',file)
+        tmp = re.search(r'.+(중학교).+\.xls[x]',file)
         if tmp:
             shutil.move(test_dir + tmp.group(0), test_dir + "중학교")
 
-        tmp = re.search(r'\w+(고등학교).+\.xls[x]',file)
+        tmp = re.search(r'.+(고등학교).+\.xls[x]',file)
         if tmp:
             shutil.move(test_dir + tmp.group(0), test_dir + "고등학교")
 
-    original_names = os.listdir(test_dir) # list
-    for file in original_names:
-        tmp = re.search(r'\w+(초등학교).+\.xls[x]',file)
+    dir_names1 = os.listdir(test_dir) # list
+    for file in dir_names1:
+        tmp = re.search(r'.+(초등학교).+\.xls[x]',file)
         if tmp:
             shutil.move(test_dir + tmp.group(0), test_dir + "초등학교")        
 
-    original_names = os.listdir(test_dir) # list
-    for file in original_names:
-        tmp = re.search(r'\w+(학교).+\.xls[x]',file)
+    dir_names2 = os.listdir(test_dir) # list
+    for file in dir_names2:
+        tmp = re.search(r'.+(학교).+\.xls[x]',file)
         if tmp:
             shutil.move(test_dir + tmp.group(0), test_dir + "특수학교")
 
