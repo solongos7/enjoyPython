@@ -62,11 +62,15 @@ def WORK():
 
 WORK()
 
-while (1):
-    t = input("다른 폴더 작업: 1\t 종료: 2 ...... ")
-    if t == '1':
-        os.system('cls')
-        WORK()
-    else:
-        print("End")
-        exit()
+print("파일 정리 끝")
+
+exit()
+
+# while (1):
+#     t = input("다른 폴더 작업: 1\t 종료: 2 ...... ")
+#     if t == '1':
+#         os.system('cls')
+#         WORK()
+#     else:
+#         print("End")
+#         exit()
