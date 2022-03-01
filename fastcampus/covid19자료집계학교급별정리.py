@@ -62,8 +62,6 @@ def WORK():
 
 WORK()
 
-print("파일 정리 끝")
-
 exit()
 
 # while (1):
